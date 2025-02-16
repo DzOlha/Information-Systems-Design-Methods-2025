@@ -4,7 +4,7 @@
 
 #ifndef CONSOLEPRINTER_H
 #define CONSOLEPRINTER_H
-#include "util/IPrinter.h"
+#include "printer/IPrinter.h"
 #include <iostream>
 
 template <typename T>
@@ -15,7 +15,7 @@ public:
     {
         size_t size = arr.size();
 
-        std::cout << title << ": { ";
+        std::cout << title << ":\n { ";
 
         for (size_t i = 0; i < size; i++)
         {
@@ -24,7 +24,7 @@ public:
                 std::cout << ", ";
         }
 
-        std::cout << " } \n";
+        std::cout << " } \n\n";
     }
 };
 

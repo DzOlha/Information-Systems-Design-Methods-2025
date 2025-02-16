@@ -12,6 +12,8 @@ class CustomAlgo: public IAlgo<int>
         explicit CustomAlgo(int n): IAlgo<int>(n) {}
 
         std::vector<int> apply() override;
+private:
+    bool dividableByK(int num, int k);
 };
 
 #endif //CUSTOMALGO_H
