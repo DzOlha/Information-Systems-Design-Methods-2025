@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.10)
+project(Tasks VERSION 1.0.0)
+
+# Set C++ standard globally for all projects (optional)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+# Add subdirectories for tasks
+add_subdirectory(prime_numbers)
