@@ -5,6 +5,7 @@ project(PrimeNumbers VERSION 1.0.0 LANGUAGES CXX)
 
 # Set the C++ standard
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_EXE_LINKER_FLAGS "-static")
 
 # Add the source files
 file(GLOB_RECURSE SOURCES ./src/*.cpp)

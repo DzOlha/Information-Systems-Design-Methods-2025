@@ -59,6 +59,9 @@ int main()
     Saver::saveToFile(primeNumbers1, filename1);
     Saver::saveToFile(primeNumbers2, filename2);
 
+    std::cout << "\nPress Enter to exit...";
+    std::cin.get();  // Очікує введення
+
     delete gen1;
     delete gen2;
     delete algo1;
